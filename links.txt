@@ -1,0 +1,2 @@
+Link to the Git-hub Repository: https://github.com/rishabrath31/student_registration_form
+Live Link to the Project : https://rishabrath31.github.io/student_registration_form/
