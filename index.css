@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000; /* Set background to black */
+  color: #fff; /* Text color white */
+  padding: 20px;
+}
+
+/* Navigation Bar Styling */
+nav {
+  margin-left: 50px; /* Add some space between h1 and nav */
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px 10px; /* Adjusted padding for better spacing */
+  background-color: #00a8ad; /* Background */
+  color: white; /* White text */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #007c7d; /* Darker aqua on hover */
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Space between h1 and nav */
+  align-items: center; /* Align vertically */
+  max-width: 800px; /* Limit the width */
+  margin: 0 auto; /* Center the header content */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  margin-top: 30px;
+  background-color: #1a1a1a; /* Darker background for better contrast */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 168, 173, 0.8); /* Glow effect with shadow */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #00a8ad;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #00a8ad;
+}
+
+button[type="submit"] {
+  width: 100%; /* Full-width button */
+  padding: 10px;
+  background-color: #00a8ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #007d81;
+}
+
+/* Glowing effect for the section */
+.glow-box {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #000;
+  box-shadow: 0 0 15px rgba(0, 168, 173, 0.8); /* Initial glow effect */
+  animation: glow-box 1s ease-in-out infinite alternate;
+}
+
+/* Glow animation for the box */
+@keyframes glow-box {
+  from {
+    box-shadow: 0 0 10px rgba(0, 168, 173, 0.4), 0 0 20px rgba(0, 168, 173, 0.6),
+      0 0 30px rgba(0, 168, 173, 0.7);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 168, 173, 0.5), 0 0 30px rgba(0, 168, 173, 0.7),
+      0 0 40px rgba(0, 168, 173, 0.8), 0 0 50px rgba(0, 168, 173, 1);
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  nav {
+    margin-left: 30px; /* Adjust margin for larger screens */
+  }
+
+  section {
+    padding: 20px; /* Less padding for larger screens */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Smaller font for h2 */
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin-left: 20px; /* Further adjust margin */
+  }
+
+  header h1 {
+    font-size: 2rem; /* Smaller header size */
+  }
+
+  section {
+    max-width: 100%; /* Full width on smaller devices */
+  }
+
+  .glow-box {
+    width: 80%; /* Wider glow box on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    margin-left: 10px; /* Minimal margin on mobile */
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Even smaller header size */
+  }
+
+  button[type="submit"] {
+    font-size: 1rem; /* Smaller button font */
+  }
+
+  .glow-box {
+    width: 100%; /* Full width on mobile */
+  }
+}

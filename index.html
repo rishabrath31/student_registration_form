@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple student registration system." />
+    <meta name="Rishab" content="Rishab Rath" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="con_img.png" type="image/png" />
+    <!-- Link to external CSS file for styling -->
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Student Registration System</h1>
+        <!-- Navigation link to the record history page -->
+        <nav>
+          <a class="button" href="records.html" target="_blank"
+            >Record History</a
+          >
+        </nav>
+      </div>
+      <p>
+        The Student Registration System allows students to enroll by providing
+        their personal information, such as student name, ID, email, and contact
+        number. It streamlines the registration process and organizes student
+        data efficiently.
+      </p>
+    </header>
+
+    <!-- Section for the registration form with a glowing effect -->
+    <section class="glow-box">
+      <h2>Register A New Student</h2>
+      <form id="studentForm" action="records.html" method="get">
+        <!-- Input for student name -->
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required />
+
+        <!-- Input for student ID -->
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" required />
+
+        <!-- Input for email ID -->
+        <label for="emailId">Email ID:</label>
+        <input type="email" id="emailId" name="emailId" required />
+
+        <!-- Input for contact number -->
+        <label for="contactNo">Contact Number:</label>
+        <input type="tel" id="contactNo" name="contactNo" required />
+
+        <!-- Submit button for the form -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
+    <!-- Link to external JavaScript file -->
+  </body>
+</html>

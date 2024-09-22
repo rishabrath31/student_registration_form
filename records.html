@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Records</title>
+    <link rel="stylesheet" href="records.css" />
+    <link rel="icon" href="rec.png" type="image/png" />
+    <!-- Link to external CSS file for styling -->
+  </head>
+  <body>
+    <header>
+      <h1>Registered Students</h1>
+      <!-- Main heading for the records page -->
+      <nav>
+        <!-- Navigation link to the registration page -->
+        <a href="index.html">Register New Student</a>
+      </nav>
+    </header>
+
+    <section id="recordsSection">
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <!-- Column for student names -->
+            <th>Student ID</th>
+            <!-- Column for student IDs -->
+            <th>Email ID</th>
+            <!-- Column for email addresses -->
+            <th>Contact Number</th>
+            <!-- Column for contact numbers -->
+            <th>Actions</th>
+            <!-- Column for action buttons (e.g., edit/delete) -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Records will be populated here dynamically using JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <script src="records.js"></script>
+    <!-- Link to external JavaScript file for dynamic functionality -->
+  </body>
+</html>
