@@ -38,6 +38,13 @@ h1 {
   color: #00a8ad;
 }
 
+/* Table Container for horizontal scrolling on small screens */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
 /* Table Styling */
 #studentTable {
   width: 50%;
@@ -95,12 +102,18 @@ h1 {
     font-size: 28px;
   }
 
+  .table-container {
+    overflow-x: auto;
+  }
+
   #studentTable {
-    width: 100%;
+    width: 100%; /* Allow table to take full width on small screens */
+    display: block;
+    overflow-x: auto; /* Enable horizontal scrolling */
   }
 
   header nav a {
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; /* Max width for buttons on smaller screens */
   }
 }
