@@ -1,48 +1,23 @@
 /* Global Styling */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text for contrast */
+  background-color: #000;
+  color: #fff;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
-/* Navigation Bar Styling */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #00a8ad;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Allow wrapping */
+/* Center the 'Register New Student' link */
+header nav {
+  text-align: center;
+  margin-bottom: 20px; /* Space between the link and the table */
 }
 
-nav ul li {
-  margin: 10px; /* Adjust margin for smaller screens */
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #007c7d; /* Darker shade on hover */
-}
-
-/* Styling for the 'Register New Student' Link */
 header nav a {
   display: inline-block;
-  margin-top: 15px;
   padding: 10px 20px;
-  background-color: #007c7d; /* Custom background color */
+  background-color: #00a8ad;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -51,13 +26,7 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: #005f60; /* Darker shade on hover */
-}
-
-/* Container */
-.container {
-  padding: 20px;
-  margin-top: 30px;
+  background-color: #005f60;
 }
 
 /* Header Styling */
@@ -69,85 +38,37 @@ h1 {
   color: #00a8ad;
 }
 
-/* Form Styling */
-form {
-  margin: 20px 0;
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: center;
-  gap: 10px;
-}
-
-form input {
-  padding: 10px;
-  border: 1px solid #00a8ad;
-  border-radius: 5px;
-  background-color: #111;
-  color: #fff;
-  flex: 1; /* Allow inputs to grow */
-  min-width: 200px; /* Minimum width for inputs */
-}
-
-form input:focus {
-  outline: none;
-  border-color: #007c7d; /* Focus border */
-}
-
-form button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #00a8ad;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: #007c7d; /* Darker shade on hover */
-}
-
-/* Table Container with Scrollbar */
-.table-container {
-  max-height: 400px;
-  overflow-y: auto;
-  margin-top: 20px;
-  border: 1px solid #00a8ad;
-  border-radius: 8px;
-  padding: 10px;
-}
-
 /* Table Styling */
-table {
-  width: 100%;
+#studentTable {
+  width: 50%;
+  margin: 0 auto; /* Center the table */
   border-collapse: collapse;
   margin-top: 10px;
   color: #fff;
 }
 
-table th,
-table td {
+#studentTable th,
+#studentTable td {
   padding: 15px;
   text-align: left;
   border: 1px solid #00a8ad;
 }
 
-th {
+#studentTable th {
   background-color: #00a8ad;
   color: black;
   font-weight: bold;
 }
 
-td {
-  background-color: #111; /* Dark background for cells */
+#studentTable td {
+  background-color: #111;
 }
 
-tr:nth-child(even) td {
+#studentTable tr:nth-child(even) td {
   background-color: #222;
 }
 
-tr:hover td {
+#studentTable tr:hover td {
   background-color: #00a8ad;
   color: black;
 }
@@ -165,49 +86,21 @@ tr:hover td {
 }
 
 .actions button:hover {
-  background-color: #007c7d; /* Darker on hover */
+  background-color: #007c7d;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
   h1 {
-    font-size: 28px; /* Smaller heading for mobile */
+    font-size: 28px;
   }
 
-  nav ul {
-    flex-direction: column; /* Stack nav items vertically */
+  #studentTable {
+    width: 100%;
   }
 
-  nav ul li {
-    margin: 5px 0; /* Vertical margin for stacked items */
+  header nav a {
+    width: 100%;
+    max-width: 300px;
   }
-
-  form {
-    flex-direction: column; /* Stack form elements vertically */
-    align-items: center; /* Center items */
-  }
-
-  form input {
-    width: 100%; /* Full width for inputs */
-    max-width: 300px; /* Limit max width */
-  }
-
-  form button {
-    width: 100%; /* Full width for button */
-    max-width: 300px; /* Limit max width */
-  }
-}
-
-/* Keyframe Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.container {
-  animation: fadeIn 0.5s ease-in; /* Apply fade-in animation */
 }
